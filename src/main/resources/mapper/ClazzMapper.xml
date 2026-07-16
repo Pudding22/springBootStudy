@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mapper.ClazzMapper">
+
+    <resultMap id="clazzResultMap" type="org.example.entity.Clazz">
+        <id property="id" column="c_id"/>
+        <result property="name" column="cname"/>
+        <result property="grade" column=""/>
+        <result property="className" column=""/>
+        <result property="teacherId" column=""/>
+        <!-- List<Student> -->
+        <collection property="students" ofType="org.example.entity.Student">
+            <id property="id" column=""/>
+            <result property="stuNo" column=""/>
+            <result property="name" column=""/>
+            <result property="age" column=""/>
+            <result property="sex" column=""/>
+            <result property="classId" column=""/>
+            <result property="createTime" column=""/>
+        </collection>
+    </resultMap>
+
+
+
+
+
+
+
+
+
+    </mapper>
