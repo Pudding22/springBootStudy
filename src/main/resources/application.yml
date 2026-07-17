@@ -10,4 +10,9 @@ mybatis:
   type-aliases-package: org.example.entity
   configuration:
     map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
+
+logging:
+  level:
+    org.example.mapper: debug
